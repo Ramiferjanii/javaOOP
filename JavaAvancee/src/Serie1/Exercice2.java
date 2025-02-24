@@ -4,17 +4,22 @@ import java.util.InputMismatchException;
 
 public class Exercice2 {
 	private static Scanner sc = new Scanner(System.in) ; 
+	
+	
     public static void main(String[] args) {
         	
     	
     	int[] tableau = new int[10] ; 
     	saisieTab(tableau) ; 
     	
-    	System.out.println("Tableau saisi : ");
+    	System.out.println("\n Tableau saisi  : ");
+    	System.out.print("[");
+
     	for (int element : tableau ) {
-    		System.out.println(element +" ");
+    		System.out.print(element + ",");
     		
     	}
+    	System.out.print("]") ; 
     }
     public static void saisieTab(int[] tab ) {
     	for (int i = 0 ; i < tab.length ; i++) {
